@@ -1,0 +1,134 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('Naija_earning_background_image.png'); /* Add a suitable money-themed image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;/* Slight transparency to make content visible */
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    width: 90%; /* Adjust size for responsiveness */
+    max-width: 800px;
+}
+
+.container .header{
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.header p {
+    color: white;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Link box styling */
+.link-box {
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* WhatsApp icon */
+.whatsapp-icon img {
+    width: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .whatsapp-icon img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .whatsapp-icon img {
+        width: 40px;
+    }
+}
